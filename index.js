@@ -52,21 +52,20 @@ const questions = [
 {
     type: 'input',
     name: 'contributors',
-    message: 'Please list those who contributed to this project...',
-    default: ''
+    message: 'Please list those who contributed to this project...'
 },
 
 {
     type: 'input',
     name: 'email',
-    message: 'Please enter you email...'
+    message: 'Please enter your email...'
 },
 
 {
     type: 'checkbox',
     name: 'license',
     message: 'Please select a license for your project...',
-    choice: ['MIT', 'APACHE 2.0', 'Boost 1.0', 'None']
+    choices: ['MIT', 'APACHE 2.0', 'Boost 1.0', 'None']
 },
 
 {
@@ -79,7 +78,7 @@ const questions = [
     type: 'input',
     name: 'creator',
     message: 'Please enter your Github User Name...'
-}
+},
 
 ]
 
@@ -87,7 +86,7 @@ const questions = [
 function init() {
     inquirer.prompt(questions).then((responses) => {
       console.log("Creating Professional README.md File...");
-      writeToFile("/README.md", generateMarkdown({ ...responses }));
+      writeToFile("./assets/README.md", generateMarkdown({ ...responses }));
     });
   }
 
