@@ -3,73 +3,97 @@ const inquirer = require('inquirer');
 const path = require('path');
 const generateMarkdown = require('./assets/generateMarkdown');
 
-
 // array of question requiring user input
 const questions = [
 {
     type: 'input',
-    name: 'Title',
-    message: 'Please enter a professional name for your project.'
+    name: 'title',
+    message: 'Please enter a professional name for your project...'
 },
 
 {
     type: 'input',
-    name: 'Description',
-    message: 'Please describe the purpose of this project.'
+    name: 'description',
+    message: 'Please describe the purpose of this project...'
 },
 
 {
     type: 'input',
-    name: 'Installation',
-    message: 'Please describe the installation process if necessary.'
+    name: 'link',
+    message: 'Please enter link to deployed project...'
+},
+
+
+
+{
+    type: 'input',
+    name: 'installation',
+    message: 'Please describe the installation process if necessary...'
 },
 
 
 {
     type: 'input',
-    name: 'Function',
-    message: 'Please describe the functionality of this project.'
+    name: 'function',
+    message: 'Please describe the functionality of this project...'
 },
 
 {
     type: 'input',
-    name: 'Require',
-    message: 'Please list any dependencies here.'
+    name: 'require',
+    message: 'Please list any dependencies here...'
+},
+{
+    type: 'input',
+    name: 'test',
+    message: 'Please enter required tests...'
 },
 
 {
     type: 'input',
-    name: 'Contributions',
-    message: 'Please list those who contributed to this project.',
+    name: 'contributors',
+    message: 'Please list those who contributed to this project...',
     default: ''
 },
 
 {
     type: 'input',
-    name: 'Email',
-    message: 'Please enter you email.'
+    name: 'email',
+    message: 'Please enter you email...'
 },
 
 {
     type: 'checkbox',
-    name: 'License',
-    message: 'Please select a license for your project.',
+    name: 'license',
+    message: 'Please select a license for your project...',
     choice: ['MIT', 'APACHE 2.0', 'Boost 1.0', 'None']
 },
 
-],
+{
+    type: 'input',
+    name: 'screenshot',
+    message: 'Please enter the link to the screenshot...'
+},
+
+{
+    type: 'input',
+    name: 'creator',
+    message: 'Please enter your Github User Name...'
+}
+
+]
 
 // initialize app
 function init() {
-    inquirer.createPromptModule(question).then((response) => {
-        console.log('-->Create Professional ReadMe File<--');
-        writeToFile('./dist/readme.md', generateMarkdown({...responses}));
+    inquirer.prompt(questions).then((responses) => {
+      console.log("Creating Professional README.md File...");
+      writeToFile("/README.md", generateMarkdown({ ...responses }));
     });
-};
+  }
 
 // write to readme
 function write(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), filename), data);
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 
 };
 
