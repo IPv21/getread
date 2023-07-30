@@ -17,11 +17,11 @@ const questions = [
     message: 'Please describe the purpose of this project...'
 },
 
-{
-    type: 'input',
-    name: 'link',
-    message: 'Please enter link to deployed project...'
-},
+// {
+//     type: 'input',
+//     name: 'link',
+//     message: 'Please enter link to deployed project...'
+// },
 
 
 
@@ -60,9 +60,9 @@ const questions = [
     name: 'email',
     message: 'Please enter your email...'
 },
-
+// needed input type list. the other would be confusing to new users and break the code upon pressing enter
 {
-    type: 'checkbox',
+    type: 'list',
     name: 'license',
     message: 'Please select a license for your project...',
     choices: ['MIT', 'APACHE 2.0', 'Boost 1.0', 'None']
@@ -85,8 +85,9 @@ const questions = [
 // initialize app
 function init() {
     inquirer.prompt(questions).then((responses) => {
+        console.log(responses);
       console.log("Creating Professional README.md File...");
-      writeToFile("./assets/README.md", generateMarkdown({ ...responses }));
+      write("./assets/README.md", generateMarkdown({ ...responses }));
     });
   }
 

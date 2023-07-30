@@ -1,22 +1,35 @@
 function generateBadge(license) {
-    if (license !== 'none') {
-        return `(https://img.shields.io/badge/${license}-blue.svg)`;
-    }
-    return'';
+    console.log(license);
+    // if (license !== 'none') {
+        // return `(https://img.shields.io/badge/:${license})
+        // `;
+    if (license === 'MIT') {
+            return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+            
+        } if  (license === 'APACHE 2.0') {
+            return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+        } if (license === 'Boost 1.0') {
+            return `[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)`
+        } if (license === 'None') {
+            return ``
+        }
+
+    // }
+    // return'';
 }
 
 // generating markdown
 function generateMarkdown(data) {
     return `# ${data.title} 
- by Matthew Shuman ${renderLicenseBadge(data.license)},
+ ${generateBadge(data.license)}
 
 
   -------------------------
   ## Table of Contents
-  * [Description](*description)
-  * [Link] (*link)
-  * [How to Use This Application](*usage)
-  * [Installation] (*installation)
+  * [Description](#description)
+  *license link
+  * [How to Use This Application](#usage)
+  * [Installation](#installation)
   * [Contributors](#contributors)
   * [Questions](#questions)
   -------------------------
