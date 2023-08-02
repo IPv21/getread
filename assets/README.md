@@ -6,26 +6,25 @@
   -------------------------
   ## Table of Contents
   * [Description](#description)
-  * [License Info](#license)
-  * [How to Use This Application](#usage)
+  * [Function](#function)
   * [Installation](#installation)
   * [Contributors](#contributors)
   * [Questions](#questions)
   -------------------------
   ## Description
-  To generate a professional ReadMe from a standard template
+  To generate a professional ReadMe
   ## Deployed Application URL
   undefined
-  ## How to Use This Application:
-  The user is prompted to enter information, and a ReadMe is generated from that info.
+  ## Function
+  Open the in
   ## Dependencies 
-  Inquirer
+  aaa
   ## Installation
-  n/a
+  Integrated Terminal
   ## Contributors
-  Mr. Shuman
+  aaa
   ## Testing
-  n/a
+  aaa
   ## Questions
-  Please send your questions [here](mailto:willsherman771@gmail.com?subject=[GitHub]) or visit [github/IPv21](https://github.com/IPv21).
+  Please send your questions [here](mailto:aaa?subject=[GitHub]) or visit [github/aaa](https://github.com/aaa).
   

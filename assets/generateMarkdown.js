@@ -53,7 +53,7 @@ function generateMarkdown(data) {
   -------------------------
   ## Table of Contents
   * [Description](#description)
-  * [How to Use This Application](#function)
+  * [Function](#function)
   * [Installation](#installation)
   * [Contributors](#contributors)
   * [Questions](#questions)
@@ -62,7 +62,7 @@ function generateMarkdown(data) {
   ${data.description}
   ## Deployed Application URL
   ${data.link}
-  ## How to Use This Application:
+  ## Function
   ${data.function}
   ## Dependencies 
   ${data.require}
