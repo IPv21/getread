@@ -47,6 +47,7 @@ function generateInfo(license) {
 function generateMarkdown(data) {
     return `# ${data.title} 
  ${generateBadge(data.license)}
+ ${generateInfo(data.license)}
 
 
   -------------------------
