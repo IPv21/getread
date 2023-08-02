@@ -1,4 +1,4 @@
-# REaD ITR ALL 
+# ReadMe Generator 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
  [The MIT License grants anyone the right to use, copy, modify and distribute the software or code, either in original or modified form.]
 
@@ -13,19 +13,19 @@
   * [Questions](#questions)
   -------------------------
   ## Description
-  ss
+  To generate a professional ReadMe from a standard template
   ## Deployed Application URL
   undefined
   ## How to Use This Application:
-  ss
+  The user is prompted to enter information, and a ReadMe is generated from that info.
   ## Dependencies 
-  aa
+  Inquirer
   ## Installation
-  aa
+  n/a
   ## Contributors
-  aa
+  Mr. Shuman
   ## Testing
-  ss
+  n/a
   ## Questions
-  Please send your questions [here](mailto:ss?subject=[GitHub]) or visit [github/ss](https://github.com/ss).
+  Please send your questions [here](mailto:willsherman771@gmail.com?subject=[GitHub]) or visit [github/IPv21](https://github.com/IPv21).
   

@@ -53,8 +53,7 @@ function generateMarkdown(data) {
   -------------------------
   ## Table of Contents
   * [Description](#description)
-  * [License Info](#license)
-  * [How to Use This Application](#usage)
+  * [How to Use This Application](#function)
   * [Installation](#installation)
   * [Contributors](#contributors)
   * [Questions](#questions)
