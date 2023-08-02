@@ -45,9 +45,11 @@ function generateInfo(license) {
 
 // generating markdown
 function generateMarkdown(data) {
-    return `# ${data.title} 
- ${generateBadge(data.license)}
-
+    // const licenseInfo = generateInfo(data.license);    
+    return `# ${data.title}
+ 
+    ${generateBadge(data.license)}
+    ${generateInfo(data.license)}
 
   -------------------------
   ## Table of Contents
@@ -60,8 +62,6 @@ function generateMarkdown(data) {
   -------------------------
   ## Description
   ${data.description}
-  ## Deployed Application URL
-  ${data.link}
   ## How to Use This Application:
   ${data.function}
   ## Dependencies 
@@ -70,7 +70,7 @@ function generateMarkdown(data) {
   ${data.installation}
   ## Contributors
   ${data.contributors}
-  ## Testing
+   ## Testing
   ${data.test}
   ## Questions
   Please send your questions [here](mailto:${data.email}?subject=[GitHub]) or visit [github/${data.creator}](https://github.com/${data.creator}).
