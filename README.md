@@ -4,5 +4,7 @@ or risk the functionality.
 
 To use this app you enter node.js into the integrated terminal and answer the prompts. Info generated from the promps is used to generate the readMe.
 
+Video Link : https://drive.google.com/file/d/1diqi6qnyMqMK-NcPXwyPYZOjCCxCo-nn/view
+
 ![image](https://github.com/IPv21/getread/assets/132957361/bd8c9000-ed26-44d5-982b-87efe47e9532)
 
