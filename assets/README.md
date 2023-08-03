@@ -12,19 +12,19 @@
   * [Questions](#questions)
   -------------------------
   ## Description
-  To generate a professional ReadMe
+  To generate a professional ReadMe from a standard template.
   ## Deployed Application URL
   undefined
   ## Function
-  Open the in
+  The user is prompted to enter information into the integrated terminal. That info is read and a readMe file is then generated.
   ## Dependencies 
-  aaa
+  Inquirer
   ## Installation
-  Integrated Terminal
+  none
   ## Contributors
-  aaa
+  n/a
   ## Testing
-  aaa
+  n/a
   ## Questions
-  Please send your questions [here](mailto:aaa?subject=[GitHub]) or visit [github/aaa](https://github.com/aaa).
+  Please send your questions [here](mailto:willsherman771@gmail.com?subject=[GitHub]) or visit [github/IPv21](https://github.com/IPv21).
   
